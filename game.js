@@ -47,7 +47,7 @@ const getWinner = () => {
 
 const game = () => {
     for (let i = 0; i < 5; i++) {
-        let userInput = prompt("'Rock, Paper, or Scissors?", "");
+        let userInput = prompt("Rock, Paper, or Scissors?", "");
         console.log(playRound(userInput));
     };
     getWinner();
