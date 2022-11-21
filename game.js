@@ -11,10 +11,10 @@ const computerPlay = () => {
 const playRound = (value) => {
     computerSelection = computerPlay().toLowerCase();
     playerSelection = value.toString().toLowerCase();
-    
+
     if (
-        (computerSelection === "rock" &&playerSelection === "scissors") ||
-        (computerSelection === "paper" && playerSelection === "rock" ) ||
+        (computerSelection === "rock" && playerSelection === "scissors") ||
+        (computerSelection === "paper" && playerSelection === "rock") ||
         (computerSelection === "scissors" && playerSelection === "paper")
     ) {
         computerScore = ++computerScore;
