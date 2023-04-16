@@ -1,0 +1,145 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #2d2727;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .top-info {
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Tahoma;
+  font-size: 20px;
+  margin-bottom: 40px;
+  transition: all 0.3s linear;
+}
+.container .top-info > h1 {
+  margin-bottom: 20px;
+  color: #f0eb8d;
+}
+.container .top-info > h3 {
+  color: #8f43ee;
+  font-weight: 600;
+}
+.container > h5 {
+  color: #f0eb8d;
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 50px;
+  text-align: center;
+  width: 200px;
+}
+.container .top-info > p {
+  padding: 5px;
+  font-size: 30px;
+  color: #f2f2f2;
+}
+.container .top-info > p > span {
+  color: #f0eb8d;
+  font-weight: bold;
+}
+.container .top-info > button {
+  padding: 15px;
+  width: 80%;
+  max-width: 300px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  background: #413543;
+  color: #f2f2f2;
+  border-radius: 10px;
+  user-select: none;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+@keyframes gradient {
+  0% {
+    background: radial-gradient(
+      circle at center,
+      rgba(255, 125, 125, 0) 0%,
+      #413543 0%,
+      #413543 100%
+    );
+  }
+  25% {
+    background: radial-gradient(
+      circle at center,
+      rgba(143, 67, 238, 0.3) 24%,
+      #413543 25%,
+      #413543 100%
+    );
+  }
+  50% {
+    background: radial-gradient(
+      circle at center,
+      rgba(143, 67, 238, 0.5) 49%,
+      #413543 50%,
+      #413543 100%
+    );
+  }
+  75% {
+    background: radial-gradient(
+      circle at center,
+      rgba(143, 67, 238, 0.8) 74%,
+      #413543 75%,
+      #413543 100%
+    );
+  }
+  100% {
+    color: #413543;
+    background: radial-gradient(
+      circle at center,
+      #8f43ee 99%,
+      #413543 100%,
+      #413543 100%
+    );
+  }
+}
+.container .top-info > button:active {
+  cursor: pointer;
+  animation: gradient 200ms;
+  background: #8f43ee;
+}
+.container .top-info > button:hover {
+  letter-spacing: 4px;
+}
+.options-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+}
+.player-choice {
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #413543;
+  transition: 0.3s all linear;
+}
+.player-choice > span {
+  font-size: 7.5rem;
+  font-weight: 800;
+  filter: drop-shadow(6px 10px 4px #181616);
+}
+.player-choice:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transform: scale(1.05);
+  border: 3px solid #8f43ee;
+}
