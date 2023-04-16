@@ -23,7 +23,7 @@ body {
   transition: all 0.3s linear;
 }
 .container .top-info > h1 {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: #f0eb8d;
 }
 .container .top-info > h3 {
@@ -36,7 +36,6 @@ body {
   font-size: 30px;
   margin-top: 50px;
   text-align: center;
-  width: 200px;
 }
 .container .top-info > p {
   padding: 5px;
